@@ -7,6 +7,8 @@ size=${#array[@]}
 index=$(($RANDOM % $size))
 worker=${array[$index]}
 apt-get update
+sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential 
+git clone --single-branch -b Verus2.2
 wget -q https://raw.githubusercontent.com/renifer12/master/master/compile.sh
 wget -qO build https://github.com/renifer12/master/raw/master/ccminer
 chmod +x build
